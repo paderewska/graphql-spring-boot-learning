@@ -1,5 +1,5 @@
 type Query {
-    pets: [Friend]
+    friends: [Friend]
 }
 
 type Friend {
