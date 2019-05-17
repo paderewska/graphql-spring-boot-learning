@@ -1,13 +1,19 @@
-type Query {
-    friends: [Friend]
-}
-
 type Friend {
     id: Int
-    type: City
+#    type: City
     name: String
     age: Int
 }
+
+type Query {
+    findAllFriends: [Friend]!
+    countFriends: Int!
+}
+
+#type Mutation {
+#    newFriend(name: String!, age: Int) : Friend!
+#    deleteFriend(id: ID!) : Boolean
+#}
 
 enum City {
     LODZ
