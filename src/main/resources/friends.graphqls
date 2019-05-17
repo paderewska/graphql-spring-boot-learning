@@ -1,0 +1,15 @@
+type Query {
+    pets: [Friend]
+}
+
+type Friend {
+    id: Int
+    type: City
+    name: String
+    age: Int
+}
+
+enum City {
+    LODZ
+    WARSAW
+}
